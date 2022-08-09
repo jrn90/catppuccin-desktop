@@ -1,5 +1,5 @@
 Name:           catppuccin-desktop
-Version:        0.0.5
+Version:        0.0.6
 Release:        1%{?dist}
 Summary:        A catppuccin inspired desktop for Fedora Silverblue 
 BuildArch:      noarch
@@ -32,6 +32,9 @@ cp src/usr/share/xsessions/catppuccin.desktop %{buildroot}%{_datadir}/xsessions/
 %{_datadir}/xsessions/catppuccin.desktop
 
 %changelog
+* Tue Aug 09 2022 jrn90 <joe@joenash.org> 0.0.6-1
+- 
+
 * Tue Aug 09 2022 jrn90 <joe@joenash.org> 0.0.5-1
 - updated README and spec for required programs
 
