@@ -1,5 +1,5 @@
 Name:           catppuccin-desktop
-Version:        0.0.4
+Version:        0.0.5
 Release:        1%{?dist}
 Summary:        A catppuccin inspired desktop for Fedora Silverblue 
 BuildArch:      noarch
@@ -8,6 +8,12 @@ License:        MIT
 Source0:        %{name}-%{version}.tar.gz
 
 Requires:       bash
+Requires:       gnome-tweak-tool
+Requires:       i3-gaps
+Requires:       network-manager-applet
+Requires:       nitrogen
+Requires:       polybar
+Requires:       rofi
 
 %description
 A Catppuccin inspired desktop for Fedora Silverblue
@@ -26,6 +32,9 @@ cp src/usr/share/xsessions/catppuccin.desktop %{buildroot}%{_datadir}/xsessions/
 %{_datadir}/xsessions/catppuccin.desktop
 
 %changelog
+* Tue Aug 09 2022 jrn90 <joe@joenash.org> 0.0.5-1
+- updated README and spec for required programs
+
 * Tue Aug 09 2022 jrn90 <joe@joenash.org> 0.0.4-1
 - fixed spec issue with datadir
 
