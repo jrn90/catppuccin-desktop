@@ -1,5 +1,5 @@
 Name:           catppuccin-desktop
-Version:        0.0.7
+Version:        0.0.8
 Release:        1%{?dist}
 Summary:        A catppuccin inspired desktop for Fedora Silverblue 
 BuildArch:      noarch
@@ -22,10 +22,10 @@ A Catppuccin inspired desktop for Fedora Silverblue
 %autosetup
 
 %install
-install -d %{buildroot}%{_datadir}/xsessions
+mkdir -p %{buildroot}%{_datadir}/xsessions
 cp src/usr/share/xsessions/catppuccin.desktop %{buildroot}%{_datadir}/xsessions/catppuccin.desktop
 
-install -d %{buildroot}%{_datadir}/catppuccin-desktop/backgrounds
+mkdir -p %{buildroot}%{_datadir}/catppuccin-desktop/backgrounds
 cp src/usr/share/catppuccin-desktop/backgrounds/buttons.png %{buildroot}%{_datadir}/catppuccin-desktop/backgrounds/buttons.png
 cp src/usr/share/catppuccin-desktop/backgrounds/cat-sound.png %{buildroot}%{_datadir}/catppuccin-desktop/backgrounds/cat-sound.png
 cp src/usr/share/catppuccin-desktop/backgrounds/clearday.jpg %{buildroot}%{_datadir}/catppuccin-desktop/backgrounds/clearday.jpg
@@ -59,6 +59,9 @@ cp src/usr/share/catppuccin-desktop/backgrounds/tropic-island-day.jpg %{buildroo
 %{_datadir}/catppuccin-desktop/backgrounds/tropic-island-day.jpg
 
 %changelog
+* Wed Aug 10 2022 jrn90 <joe@joenash.org> 0.0.8-1
+- 
+
 * Wed Aug 10 2022 jrn90 <joe@joenash.org> 0.0.7-1
 - moved from nitrogen to feh
 - added backgrounds 
