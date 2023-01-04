@@ -4,6 +4,4 @@ Comment=Catppuccin inspired desktop for Fedora
 Exec=/usr/bin/catppuccin-desktop
 TryExec=/usr/bin/catppuccin-desktop
 Type=Application
-X-LightDM-DesktopName=i3
-DesktopNames=i3
-Keywords=tiling;wm;windowmanager;window;manager;
+DesktopNames=Catppuccin
