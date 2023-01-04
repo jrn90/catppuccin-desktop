@@ -21,7 +21,7 @@ Requires:	make
 Requires:	pip
 Requires:	python
 Requires:	npm
-Requires:	node
+Requires:	nodejs
 
 %description
 A Catppuccin inspired desktop for Fedora Silverblue
