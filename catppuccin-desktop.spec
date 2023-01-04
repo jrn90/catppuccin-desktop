@@ -1,5 +1,5 @@
 Name:           catppuccin-desktop
-Version:        0.0.13
+Version:        0.0.14
 Release:        1%{?dist}
 Summary:        A catppuccin inspired desktop for Fedora Silverblue 
 BuildArch:      noarch
@@ -74,6 +74,9 @@ cp src/usr/share/catppuccin-desktop/backgrounds/tropic-island-day.jpg %{buildroo
 %{_datadir}/catppuccin-desktop/backgrounds/tropic-island-day.jpg
 
 %changelog
+* Wed Jan 04 2023 jrn90 <jrnash20650@gmail.com> 0.0.14-1
+- bug: forgot i3 config (jrnash20650@gmail.com)
+
 * Wed Jan 04 2023 jrn90 <jrnash20650@gmail.com> 0.0.13-1
 - added default i3 config (jrnash20650@gmail.com)
 - removed rust install (duh) (jrnash20650@gmail.com)
