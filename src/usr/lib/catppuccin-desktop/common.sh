@@ -1,4 +1,4 @@
-#!/usr/env/bin bash
+#!/usr/bin bash
 #
 # Common functions for the Catppuccin Desktop
 
