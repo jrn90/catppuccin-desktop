@@ -1,5 +1,5 @@
 Name:           catppuccin-desktop
-Version:        0.0.15
+Version:        0.0.16
 Release:        1%{?dist}
 Summary:        A catppuccin inspired desktop for Fedora Silverblue 
 BuildArch:      noarch
@@ -74,6 +74,10 @@ usr/lib/catppuccin-desktop/common.sh
 %{_datadir}/catppuccin-desktop/backgrounds/tropic-island-day.jpg
 
 %changelog
+* Wed Jan 04 2023 jrn90 <jrnash20650@gmail.com> 0.0.16-1
+- Automatic commit of package [catppuccin-desktop] release [0.0.15-1].
+  (jrnash20650@gmail.com)
+
 * Wed Jan 04 2023 jrn90 <jrnash20650@gmail.com> 0.0.15-1
 - fix lib mismash (jrnash20650@gmail.com)
 
