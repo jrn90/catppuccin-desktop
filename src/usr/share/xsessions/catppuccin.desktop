@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Catppuccin
-Comment=improved dynamic tiling window manager
+Comment=Catppuccin inspired desktop for Fedora
 Exec=i3
 TryExec=i3
 Type=Application

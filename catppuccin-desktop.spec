@@ -22,6 +22,12 @@ A Catppuccin inspired desktop for Fedora Silverblue
 %autosetup
 
 %install
+mkdir -p %{buildroot}%{_bindir}/
+cp src/usr/bin/catppuccin-desktop %{buildroot}%{_bindir}/catppuccin-desktop
+
+mkdir -p %{buildroot}%{_libdir}/catppuccin-desktop
+cp src/usr/lib/catppuccin-desktop/common.sh %{buildroot}%{_libdir}/catppuccin-desktop/common.sh
+
 mkdir -p %{buildroot}%{_datadir}/xsessions
 cp src/usr/share/xsessions/catppuccin.desktop %{buildroot}%{_datadir}/xsessions/catppuccin.desktop
 
@@ -42,6 +48,10 @@ cp src/usr/share/catppuccin-desktop/backgrounds/tropic-island-day.jpg %{buildroo
 %files
 %license LICENSE
 %doc README.md
+
+%{_bindir}/catppuccin-desktop
+
+%{_libdir}/catppuccin-desktop/common.sh
 
 %{_datadir}/xsessions/catppuccin.desktop
 

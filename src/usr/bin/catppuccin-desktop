@@ -1,0 +1,10 @@
+#!/usr/env/bin bash
+#
+# Catppuccin Desktop Startup Script
+
+set -Eeu -o pipefail
+
+source /usr/lib/catppuccin-desktop/common.sh
+
+i3 -c "$I3_CONFIG_FILE"
+
