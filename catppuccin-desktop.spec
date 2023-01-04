@@ -1,5 +1,5 @@
 Name:           catppuccin-desktop
-Version:        0.0.10
+Version:        0.0.11
 Release:        1%{?dist}
 Summary:        A catppuccin inspired desktop for Fedora Silverblue 
 BuildArch:      noarch
@@ -14,12 +14,23 @@ Requires:       network-manager-applet
 Requires:       feh
 Requires:       polybar
 Requires:       rofi
+Requires:	neovim
+Requires:	python3-neovim
+Requires:	git
+Requires:	make
+Requires:	pip
+Requires:	python
+Requires:	npm
+Requires:	node
 
 %description
 A Catppuccin inspired desktop for Fedora Silverblue
 
 %prep
 %autosetup
+
+%pre
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 %install
 mkdir -p %{buildroot}%{_bindir}/
@@ -69,6 +80,9 @@ cp src/usr/share/catppuccin-desktop/backgrounds/tropic-island-day.jpg %{buildroo
 %{_datadir}/catppuccin-desktop/backgrounds/tropic-island-day.jpg
 
 %changelog
+* Wed Jan 04 2023 jrn90 <jrnash20650@gmail.com> 0.0.11-1
+- 
+
 * Wed Jan 04 2023 jrn90 <jrnash20650@gmail.com> 0.0.10-1
 - Added startup script (jrnash20650@gmail.com)
 
