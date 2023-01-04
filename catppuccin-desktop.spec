@@ -14,23 +14,12 @@ Requires:       network-manager-applet
 Requires:       feh
 Requires:       polybar
 Requires:       rofi
-Requires:	neovim
-Requires:	python3-neovim
-Requires:	git
-Requires:	make
-Requires:	pip
-Requires:	python
-Requires:	npm
-Requires:	nodejs
 
 %description
 A Catppuccin inspired desktop for Fedora Silverblue
 
 %prep
 %autosetup
-
-%pre
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 %install
 mkdir -p %{buildroot}%{_bindir}/
