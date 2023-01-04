@@ -56,7 +56,7 @@ cp src/usr/share/catppuccin-desktop/backgrounds/tropic-island-day.jpg %{buildroo
 
 %{_bindir}/catppuccin-desktop
 
-usr/lib/catppuccin-desktop/common.sh
+/usr/lib/catppuccin-desktop/common.sh
 
 %{_datadir}/xsessions/catppuccin.desktop
 
