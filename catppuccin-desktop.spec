@@ -28,7 +28,7 @@ cp src/etc/catppuccin-desktop/i3/config %{buildroot}%{_sysconfdir}/catppuccin-de
 mkdir -p %{buildroot}%{_bindir}/
 cp src/usr/bin/catppuccin-desktop %{buildroot}%{_bindir}/catppuccin-desktop
 
-mkdir -p %{buildroot}%/usr/lib/catppuccin-desktop
+mkdir -p %{buildroot}/usr/lib/catppuccin-desktop
 cp src/usr/lib/catppuccin-desktop/common.sh %{buildroot}/usr/lib/catppuccin-desktop/common.sh
 
 mkdir -p %{buildroot}%{_datadir}/xsessions
