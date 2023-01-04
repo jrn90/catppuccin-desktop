@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=Catppuccin
 Comment=Catppuccin inspired desktop for Fedora
-Exec=i3
-TryExec=i3
+Exec=/usr/bin/catppuccin-desktop
+TryExec=/usr/bin/catppuccin-desktop
 Type=Application
 X-LightDM-DesktopName=i3
 DesktopNames=i3

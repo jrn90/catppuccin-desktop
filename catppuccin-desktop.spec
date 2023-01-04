@@ -22,6 +22,9 @@ A Catppuccin inspired desktop for Fedora Silverblue
 %autosetup
 
 %install
+mkdir -p %{buildroot}%{_sysconfdir}/catppuccin-desktop/i3
+cp src/etc/catppuccin-desktop/i3/config %{buildroot}%{_sysconfdir}/catppuccin-desktop/i3/config
+
 mkdir -p %{buildroot}%{_bindir}/
 cp src/usr/bin/catppuccin-desktop %{buildroot}%{_bindir}/catppuccin-desktop
 
