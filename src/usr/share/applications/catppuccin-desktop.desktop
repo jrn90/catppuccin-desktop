@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=catppuccin-desktop
-Comment=Productivity-focused desktop environment, Regolith
+Comment=Catppuccin Desktop
 Exec=catppuccin-desktop-init
 X-GNOME-WMName=Catppuccin-Desktop
 X-GNOME-Autostart-Phase=WindowManager

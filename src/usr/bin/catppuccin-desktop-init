@@ -14,7 +14,6 @@ fi
 
 i3 -c "$I3_CONFIG_FILE"
 
-
 # Close session when i3 exits.
 if [ -n "$DESKTOP_AUTOSTART_ID" ]; then
     dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.Logout "uint32:1"
