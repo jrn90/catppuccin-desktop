@@ -35,8 +35,8 @@ cp src/usr/lib/catppuccin-desktop/common.sh %{buildroot}/usr/lib/catppuccin-desk
 mkdir -p %{buildroot}%{_datadir}/applications
 cp src/usr/share/applications/catppuccin-desktop.desktop %{buildroot}%{_datadir}/applications/catppuccin-desktop.desktop
 
-mkdir -p %{buildroot}%{_datadir}/gnome-session/session
-cp src/usr/share/gnome-session/session/catppuccin-desktop.session %{buildroot}%{_datadir}/gnome-session/session/catppuccin-desktop.session
+mkdir -p %{buildroot}%{_datadir}/gnome-session/sessions
+cp src/usr/share/gnome-session/sessions/catppuccin-desktop.session %{buildroot}%{_datadir}/gnome-session/sessions/catppuccin-desktop.session
 
 mkdir -p %{buildroot}%{_datadir}/xsessions
 cp src/usr/share/xsessions/catppuccin.desktop %{buildroot}%{_datadir}/xsessions/catppuccin.desktop
