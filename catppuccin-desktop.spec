@@ -1,5 +1,5 @@
 Name:           catppuccin-desktop
-Version:        0.0.27
+Version:        0.0.28
 Release:        1%{?dist}
 Summary:        A catppuccin inspired desktop for Fedora Silverblue 
 BuildArch:      noarch
@@ -86,6 +86,9 @@ cp src/usr/share/catppuccin-desktop/backgrounds/tropic-island-day.jpg %{buildroo
 %{_datadir}/catppuccin-desktop/backgrounds/tropic-island-day.jpg
 
 %changelog
+* Thu Jan 05 2023 jrn90 <jrnash20650@gmail.com> 0.0.28-1
+- rpm build forgot file (jrnash20650@gmail.com)
+
 * Thu Jan 05 2023 jrn90 <jrnash20650@gmail.com> 0.0.27-1
 - updated rpm build for sessions (jrnash20650@gmail.com)
 
