@@ -27,9 +27,16 @@ cp src/etc/catppuccin-desktop/i3/config %{buildroot}%{_sysconfdir}/catppuccin-de
 
 mkdir -p %{buildroot}%{_bindir}/
 cp src/usr/bin/catppuccin-desktop %{buildroot}%{_bindir}/catppuccin-desktop
+cp src/usr/bin/catppuccin-desktop %{buildroot}%{_bindir}/catppuccin-desktop-init
 
 mkdir -p %{buildroot}/usr/lib/catppuccin-desktop
 cp src/usr/lib/catppuccin-desktop/common.sh %{buildroot}/usr/lib/catppuccin-desktop/common.sh
+
+mkdir -p %{buildroot}%{_datadir}/applications
+cp src/usr/share/applications/catppuccin-desktop.desktop %{buildroot}%{_datadir}/applications/catppuccin-desktop.desktop
+
+mkdir -p %{buildroot}%{_datadir}/gnome-session/session
+cp src/usr/share/gnome-session/session/catppuccin-desktop.session %{buildroot}%{_datadir}/gnome-session/session/catppuccin-desktop.session
 
 mkdir -p %{buildroot}%{_datadir}/xsessions
 cp src/usr/share/xsessions/catppuccin.desktop %{buildroot}%{_datadir}/xsessions/catppuccin.desktop
@@ -55,8 +62,13 @@ cp src/usr/share/catppuccin-desktop/backgrounds/tropic-island-day.jpg %{buildroo
 %{_sysconfdir}/catppuccin-desktop/i3/config
 
 %{_bindir}/catppuccin-desktop
+%{_bindir}/catppuccin-desktop-init
 
 /usr/lib/catppuccin-desktop/common.sh
+
+%{_datadir}/applications/catppuccin-desktop.desktop
+
+%{_datadir}/gnome-session/session/catppuccin-desktop.session
 
 %{_datadir}/xsessions/catppuccin.desktop
 

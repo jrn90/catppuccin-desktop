@@ -1,0 +1,21 @@
+#!/usr/bin bash
+#
+# Catppuccin Desktop Startup Script
+
+set -Eeu -o pipefail
+
+source /usr/lib/catppuccin-desktop/common.sh
+
+# Register with gnome-session so that it does not kill the whole session thinking it is dead.
+# See https://zork.net/~st/jottings/gnome-i3.html for details
+if [ -n "$DESKTOP_AUTOSTART_ID" ]; then
+    dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.RegisterClient "string:Catpuccin-Desktop" "string:$DESKTOP_AUTOSTART_ID"
+fi
+
+i3 -c "$I3_CONFIG_FILE"
+
+
+# Close session when i3 exits.
+if [ -n "$DESKTOP_AUTOSTART_ID" ]; then
+    dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.Logout "uint32:1"
+fi

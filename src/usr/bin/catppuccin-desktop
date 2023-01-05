@@ -1,10 +1,10 @@
-#!/usr/bin bash
+#!/bin/bash
 #
-# Catppuccin Desktop Startup Script
+# Starts GNOME session for catppuccin-desktop
 
-set -Eeu -o pipefail
+if [ -z "$XDG_CURRENT_DESKTOP" ]; then
+    export XDG_CURRENT_DESKTOP="Catppuccin-Desktop"
+fi
 
-source /usr/lib/catppuccin-desktop/common.sh
-
-i3 -c "$I3_CONFIG_FILE"
-
+exec gnome-session --builtin --session=catppuccin-desktop --disable-acceleration-check "$@"
+ 
