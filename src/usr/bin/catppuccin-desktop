@@ -3,7 +3,7 @@
 # Starts GNOME session for catppuccin-desktop
 
 if [ -z "$XDG_CURRENT_DESKTOP" ]; then
-    export XDG_CURRENT_DESKTOP="Catppuccin-Desktop:GNOME-Flashback:GNOME"
+    export XDG_CURRENT_DESKTOP="Catppuccin-Desktop:GNOME"
 fi
 
 exec gnome-session --builtin --session=catppuccin-desktop --disable-acceleration-check "$@"
