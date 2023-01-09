@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Catppuccin-Desktop
+NoDisplay=true
 Comment=Catppuccin Desktop
 Exec=catppuccin-desktop-init
 X-GNOME-WMName=Catppuccin-Desktop

@@ -1,10 +1,24 @@
-#!/usr/bin bash
+#!/bin/sh
 #
 # Catppuccin Desktop Startup Script
 
 set -Eeu -o pipefail
 
+# Register with gnome-session so that it does not kill the whole session thinking it is dead.
+test -n "$DESKTOP_AUTOSTART_ID" && {
+    dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.RegisterClient "string:catppuccin-desktop" "string:$DESKTOP_AUTOSTART_ID"
+}
+
+# Support for merging .Xresources
+test -e $HOME/.Xresources && {
+    xrdb -merge $HOME/.Xresources
+}
+
 source /usr/lib/catppuccin-desktop/common.sh
 
 i3 -c "$I3_CONFIG_FILE"
 
+# Logout process.
+test -n "$DESKTOP_AUTOSTART_ID" && {
+	dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.Logout "uint32:1"
+}
