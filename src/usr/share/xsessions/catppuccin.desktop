@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Catppuccin-Desktop
+Name=Catppuccin
 Comment=Catppuccin inspired desktop for Fedora
 Exec=/usr/bin/catppuccin-desktop
 TryExec=/usr/bin/catppuccin-desktop
 Type=Application
-DesktopNames=Catppuccin-Desktop;GNOME-Flashback;GNOME
+DesktopNames=Catppuccin-Desktop;GNOME
